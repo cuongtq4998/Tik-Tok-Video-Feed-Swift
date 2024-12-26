@@ -29,7 +29,7 @@ class VideoCustomCell: UITableViewCell {
                                             frame: bottomGradientImageView.bounds)
         bottomGradientImageView.contentMode = .scaleAspectFill
         bottomGradientImageView.image = bottomGradient
-        self.contentView.backgroundColor = .random
+        //self.contentView.backgroundColor = .random
         videoLayer.backgroundColor = UIColor.clear.cgColor
         videoLayer.videoGravity = AVLayerVideoGravity.resize
         thumbnailImageView.layer.addSublayer(videoLayer)

@@ -1,0 +1,30 @@
+PODS:
+  - Cache (7.4.0)
+  - GCDWebServer (3.5.4):
+    - GCDWebServer/Core (= 3.5.4)
+  - GCDWebServer/Core (3.5.4)
+
+DEPENDENCIES:
+  - Cache (from `https://github.com/hyperoslo/Cache.git`)
+  - GCDWebServer (~> 3.0)
+
+SPEC REPOS:
+  trunk:
+    - GCDWebServer
+
+EXTERNAL SOURCES:
+  Cache:
+    :git: https://github.com/hyperoslo/Cache.git
+
+CHECKOUT OPTIONS:
+  Cache:
+    :commit: 81a0277cbc6b63f4e0cd6f42c4abefa1011bbfa9
+    :git: https://github.com/hyperoslo/Cache.git
+
+SPEC CHECKSUMS:
+  Cache: 11fe825910b467bf12931fc12624a2f380b3e09b
+  GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
+
+PODFILE CHECKSUM: 037d892662b1c2c6b6a2566ebc509be3c2b54699
+
+COCOAPODS: 1.15.2

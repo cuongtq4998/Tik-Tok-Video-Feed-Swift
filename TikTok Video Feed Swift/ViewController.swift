@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     }
     fileprivate func configureTableView() {
         tableView.isPagingEnabled = true
-        tableView.bounces = false
+        tableView.bounces = true
         tableView.showsVerticalScrollIndicator = false
         tableView.contentInsetAdjustmentBehavior = .never
         tableView.register(UINib(nibName: "VideoCustomCell", bundle: nil),

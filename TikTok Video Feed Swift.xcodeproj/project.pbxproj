@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04C61D5F2D1D9F2300DD7E2C /* HLSVideoCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C61D5E2D1D9F2300DD7E2C /* HLSVideoCache.swift */; };
+		8FEABDCA6D01EE0648B582A0 /* Pods_TikTok_Video_Feed_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD70AC28B1E8738BC7A5EE1 /* Pods_TikTok_Video_Feed_Swift.framework */; };
 		9F345C3F29001278006D7C44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F345C3E29001278006D7C44 /* AppDelegate.swift */; };
 		9F345C4329001278006D7C44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F345C4229001278006D7C44 /* ViewController.swift */; };
 		9F345C4629001278006D7C44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F345C4429001278006D7C44 /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04C61D5E2D1D9F2300DD7E2C /* HLSVideoCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLSVideoCache.swift; sourceTree = "<group>"; };
+		5EB8FA1A8299C0B465547FC3 /* Pods-TikTok Video Feed Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikTok Video Feed Swift.release.xcconfig"; path = "Target Support Files/Pods-TikTok Video Feed Swift/Pods-TikTok Video Feed Swift.release.xcconfig"; sourceTree = "<group>"; };
 		9F345C3B29001278006D7C44 /* TikTok Video Feed Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TikTok Video Feed Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F345C3E29001278006D7C44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F345C4229001278006D7C44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +40,8 @@
 		9F431FD9290028930087ADDB /* VideoLayers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLayers.swift; sourceTree = "<group>"; };
 		9F431FDB290028B90087ADDB /* VideoPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerController.swift; sourceTree = "<group>"; };
 		9F431FDD290147410087ADDB /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		EAD70AC28B1E8738BC7A5EE1 /* Pods_TikTok_Video_Feed_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TikTok_Video_Feed_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9C837C08B54D65BD9EE5C2F /* Pods-TikTok Video Feed Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikTok Video Feed Swift.debug.xcconfig"; path = "Target Support Files/Pods-TikTok Video Feed Swift/Pods-TikTok Video Feed Swift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FEABDCA6D01EE0648B582A0 /* Pods_TikTok_Video_Feed_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D624CEBFDFED7D675813EEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAD70AC28B1E8738BC7A5EE1 /* Pods_TikTok_Video_Feed_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		526E8237F436397E27736543 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9C837C08B54D65BD9EE5C2F /* Pods-TikTok Video Feed Swift.debug.xcconfig */,
+				5EB8FA1A8299C0B465547FC3 /* Pods-TikTok Video Feed Swift.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9F345C3229001278006D7C44 = {
 			isa = PBXGroup;
 			children = (
 				9F345C3D29001278006D7C44 /* TikTok Video Feed Swift */,
 				9F345C3C29001278006D7C44 /* Products */,
+				0D624CEBFDFED7D675813EEB /* Frameworks */,
+				526E8237F436397E27736543 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +94,7 @@
 		9F345C3D29001278006D7C44 /* TikTok Video Feed Swift */ = {
 			isa = PBXGroup;
 			children = (
+				04C61D5E2D1D9F2300DD7E2C /* HLSVideoCache.swift */,
 				9F431FD8290028600087ADDB /* Resources */,
 				9F345C5829001A1C006D7C44 /* Video Cell */,
 				9F345C3E29001278006D7C44 /* AppDelegate.swift */,
@@ -108,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F345C4F2900127A006D7C44 /* Build configuration list for PBXNativeTarget "TikTok Video Feed Swift" */;
 			buildPhases = (
+				53FE3BB561791962373DA825 /* [CP] Check Pods Manifest.lock */,
 				9F345C3729001278006D7C44 /* Sources */,
 				9F345C3829001278006D7C44 /* Frameworks */,
 				9F345C3929001278006D7C44 /* Resources */,
+				29318D2001182245C84719D1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,6 +197,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29318D2001182245C84719D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TikTok Video Feed Swift/Pods-TikTok Video Feed Swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TikTok Video Feed Swift/Pods-TikTok Video Feed Swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TikTok Video Feed Swift/Pods-TikTok Video Feed Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53FE3BB561791962373DA825 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TikTok Video Feed Swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9F345C3729001278006D7C44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -176,6 +247,7 @@
 				9F431FDC290028B90087ADDB /* VideoPlayerController.swift in Sources */,
 				9F431FD72900285B0087ADDB /* VideoContainer.swift in Sources */,
 				9F345C53290014F9006D7C44 /* Presenter.swift in Sources */,
+				04C61D5F2D1D9F2300DD7E2C /* HLSVideoCache.swift in Sources */,
 				9F345C4329001278006D7C44 /* ViewController.swift in Sources */,
 				9F431FDA290028930087ADDB /* VideoLayers.swift in Sources */,
 				9F345C5529001A09006D7C44 /* VideoCustomCell.swift in Sources */,
@@ -322,12 +394,16 @@
 		};
 		9F345C502900127A006D7C44 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9C837C08B54D65BD9EE5C2F /* Pods-TikTok Video Feed Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2VB6TLLAYR;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5L2NM6YDYV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "TikTok Video Feed Swift/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -335,14 +411,16 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cedanmisquith.TikTok-Video-Feed-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = ftel.rad.fptplaydev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "FPT Play Dev Development";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -351,12 +429,14 @@
 		};
 		9F345C512900127A006D7C44 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EB8FA1A8299C0B465547FC3 /* Pods-TikTok Video Feed Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2VB6TLLAYR;
+				DEVELOPMENT_TEAM = 5L2NM6YDYV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "TikTok Video Feed Swift/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -364,7 +444,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,6 +452,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cedanmisquith.TikTok-Video-Feed-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
