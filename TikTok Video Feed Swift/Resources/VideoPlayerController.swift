@@ -14,6 +14,62 @@ protocol PlayVideoLayerContainer {
     func visibleVideoHeight() -> CGFloat
 }
 
+@objc public class PKTimeRange: NSObject {
+    @objc public let start: TimeInterval
+    @objc public let end: TimeInterval
+    @objc public let duration: TimeInterval
+    
+    @objc public override var description: String {
+        return "[\(String(describing: type(of: self)))] - start: \(self.start), end: \(self.end), duration: \(self.duration)"
+    }
+    
+    init(start: TimeInterval, duration: TimeInterval) {
+        self.start = start
+        self.duration = duration
+        self.end = start + duration
+    }
+    
+    convenience init(timeRange: CMTimeRange) {
+        let start = CMTimeGetSeconds(timeRange.start)
+        let duration = CMTimeGetSeconds(timeRange.duration)
+        self.init(start: start, duration: duration)
+    }
+}
+
+
+extension VideoPlayerController {
+    @objc var currentItem: AVPlayerItem? {
+        return currentPlayer?.currentItem
+    }
+    
+    public var loadedTimeRanges: [PKTimeRange]? {
+        return currentItem?.loadedTimeRanges.map { PKTimeRange(timeRange: $0.timeRangeValue) }
+    }
+    
+    var duration: TimeInterval {
+        guard let playerItem = currentItem else { return 0 }
+        return playerItem.duration.seconds
+    }
+    
+    public var bufferedTime: TimeInterval {
+        guard let playerItem = currentItem else { return 0 }
+        
+        if let loadedTimeRanges = self.loadedTimeRanges {
+            for timeRange in loadedTimeRanges {
+                if playerItem.currentTime().seconds.isLess(than: timeRange.end) {
+                    return timeRange.end
+                }
+            }
+        }
+        
+        return playerItem.currentTime().seconds
+    }
+}
+
+func printShort(_ string: String) {
+    print("➡️➡️➡️➡️➡️➡️: \(string)")
+}
+
 class VideoPlayerController: NSObject {
     var minimumLayerHeightToPlay: CGFloat = 60
     var mute = false
@@ -31,17 +87,112 @@ class VideoPlayerController: NSObject {
     
     private var videoLayers = VideoLayers()
     // Current AVPlapyerLayer that is playing video
-    private var currentLayer: AVPlayerLayer?
+    var currentLayer: AVPlayerLayer?
+    @objc var currentPlayer: AVPlayer?
+    
+    private var isAddObserver:Bool = false
+    static private var observerContext = 0
+    private var observedKeyPaths: [String] {
+        return [
+            #keyPath(currentItem.status),
+            #keyPath(currentItem.status),
+            #keyPath(currentItem.isPlaybackLikelyToKeepUp),
+            #keyPath(currentItem.isPlaybackBufferEmpty),
+            #keyPath(currentItem.isPlaybackBufferFull),
+        ]
+    }
+    
+    let notificationCenter: NotificationCenter = NotificationCenter.default
+    public func addObservers() {
+        
+        for keyPath in observedKeyPaths {
+            addObserver(self, forKeyPath: keyPath, options: [.new, .initial], context: &VideoPlayerController.observerContext)
+        }
+        
+        
+        isAddObserver = true
+    }
 
+    public func removeObservers() {
+        guard isAddObserver else {return}
+        isAddObserver = false
+        for keyPath in observedKeyPaths {
+            removeObserver(self, forKeyPath: keyPath, context: &VideoPlayerController.observerContext)
+        }
+        
+        notificationCenter.removeObserver(self)
+    }
+    
+    public override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        guard context == &VideoPlayerController.observerContext else {
+            super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
+            return
+        }
+        
+        guard let keyPath = keyPath else { return }
+        
+        switch keyPath {
+        case #keyPath(currentItem.status):
+            guard let statusChange = change?[.newKey] as? NSNumber, let newPlayerStatus = AVPlayer.Status(rawValue: statusChange.intValue) else {
+                printShort("unknown player status")
+                return
+            }
+            if newPlayerStatus == .readyToPlay {
+                printShort("player is ready to play player items")
+            } else {
+                printShort("player is failed/unknown to play player items")
+            }
+            
+        case #keyPath(currentItem.status):
+            guard let statusChange = change?[.newKey] as? NSNumber, let newPlayerItemStatus = AVPlayerItem.Status(rawValue: statusChange.intValue) else {
+                printShort("unknown player item status")
+                return
+            }
+            if newPlayerItemStatus == .readyToPlay {
+                printShort("player item is .readyToPlay")
+            } else if newPlayerItemStatus == .failed {
+                printShort("player item is .failed")
+            } else {
+                //llog("currentItem is unknown")
+            }
+            
+        case #keyPath(currentItem.isPlaybackLikelyToKeepUp):
+            guard let isPlaybackLikelyToKeepUp = currentItem?.isPlaybackLikelyToKeepUp else { return }
+            if (isPlaybackLikelyToKeepUp) {
+                
+            }
+            
+        case #keyPath(currentItem.isPlaybackBufferEmpty):
+            guard let isPlaybackBufferEmpty = currentItem?.isPlaybackBufferEmpty else { return }
+            if (isPlaybackBufferEmpty) {
+                printShort("player item is isPlaybackBufferEmpty")
+            }
+            
+        case #keyPath(currentItem.isPlaybackBufferFull):
+            guard let isPlaybackBufferFull = currentItem?.isPlaybackBufferFull else { return }
+            if (isPlaybackBufferFull) {
+                printShort("player item is isPlaybackBufferFull")
+            }
+            
+        default:
+            super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
+        }
+    }
+    
     override init() {
         super.init()
+        addObservers()
+    }
+    
+    deinit {
+        removeObservers()
     }
 
     // Setup video for a URL using HLSVideoCache
     func setupVideoFor(url: String) {
         guard let originalURL = URL(string: url),
               let proxyURL = HLSVideoCache.shared.reverseProxyURL(from: originalURL) else {
-            print("Invalid URL or unable to create reverse proxy URL")
+            printShort("Invalid URL or unable to create reverse proxy URL")
             return
         }
 
@@ -67,11 +218,11 @@ class VideoPlayerController: NSObject {
                 }
 
             case .failed, .cancelled:
-                print("Failed to load asset for URL: \(url)")
+                printShort("Failed to load asset for URL: \(url)")
                 return
 
             default:
-                print("Unknown asset loading state")
+                printShort("Unknown asset loading state")
                 return
             }
         }
@@ -80,6 +231,7 @@ class VideoPlayerController: NSObject {
     func playVideo(withLayer layer: AVPlayerLayer, url: String, player: AVPlayer, playerItem: AVPlayerItem) {
         videoURL = url
         currentLayer = layer
+        currentPlayer = player
 
         // Assign player and item to the layer
         layer.player = player
@@ -91,6 +243,9 @@ class VideoPlayerController: NSObject {
         NotificationCenter.default.post(name: Notification.Name("STARTED_PLAYING"),
                                         object: nil,
                                         userInfo: nil)
+        
+        
+        addObservers()
     }
 
     func removeLayerFor(cell: PlayVideoLayerContainer) {
@@ -142,7 +297,7 @@ class VideoPlayerController: NSObject {
             } else {
                 guard let originalURL = URL(string: videoCellURL),
                       let proxyURL = HLSVideoCache.shared.reverseProxyURL(from: originalURL) else {
-                    print("Invalid URL or reverse proxy failed")
+                    printShort("Invalid URL or reverse proxy failed")
                     return
                 }
 

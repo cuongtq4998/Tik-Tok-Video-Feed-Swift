@@ -46,7 +46,8 @@ class VideoCustomCell: UITableViewCell {
     func configureCell(data: VideoObject) {
         self.thumbnailImageView.imageURL = data.thumbnailURL
         self.videoURL = data.videoURL
-        self.titleLabel.text = data.title
+        self.titleLabel.text = data.title + "\(videoURL ?? "")"
+        titleLabel.lineBreakMode = .byTruncatingHead
         self.descriptionLabel.text = data.videoDescription
     }
 }
