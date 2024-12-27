@@ -7,6 +7,17 @@
 
 import UIKit
 class ViewController: UIViewController {
+    @IBOutlet weak var clearCache: UIButton!
+    @IBAction func clearCacheTrigger(_ sender: Any) {
+        do {
+            try HLSVideoCache.shared.clearCache()
+            showToast(message: "Cache Cleared OK")
+        }catch {
+            print("Error in clearing cache")
+        }
+    }
+    
+    @IBOutlet weak var debugLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var topGradientImageView: UIImageView!
     var presenter: Presenter!
@@ -18,6 +29,29 @@ class ViewController: UIViewController {
         DispatchQueue.main.async {
             VideoPlayerController.sharedVideoPlayer.pausePlayeVideosFor(tableView: self.tableView)
         }
+        
+        addObserverState()
+        
+        VideoPlayerController.sharedVideoPlayer.timeHandler = { [weak self] timeData in
+            guard let self = self else { return }
+            
+            
+            var timeAttributes = ["─ Debug ─",
+                                    "bufferTime: \(timeData.bufferedTime.timeIntervalString)" + ", current: \(timeData.currentTime.timeIntervalString)" + ", duration: \(timeData.durationTime.timeIntervalString)"
+            ]
+            
+            if let orginalURL = timeData.videoURL, let url = URL(string: orginalURL) {
+                let originalURLCache = HLSVideoCache.shared.reverseProxyURL(from: url)
+                timeAttributes.append(originalURLCache?.absoluteString ?? "")
+            }
+            
+            let debugTime = timeAttributes.joined(separator: "\n")
+            
+            DispatchQueue.main.async {
+                self.debugLabel.text = debugTime
+            }
+            
+        }
     }
     fileprivate func configureGradients() {
         let topGradient = Utilities.shared.createGradient(color1: UIColor.black.withAlphaComponent(0.7),
@@ -28,12 +62,22 @@ class ViewController: UIViewController {
         topGradientImageView.image = topGradient
     }
     fileprivate func configureTableView() {
+        tableView.alwaysBounceVertical = true
         tableView.isPagingEnabled = true
-        tableView.bounces = true
+        tableView.bounces = false
         tableView.showsVerticalScrollIndicator = false
         tableView.contentInsetAdjustmentBehavior = .never
         tableView.register(UINib(nibName: "VideoCustomCell", bundle: nil),
                            forCellReuseIdentifier: "VideoCustomCell")
+    }
+    
+    
+    func addObserverState(){
+        NotificationCenter.default.addObserver(self, selector: #selector(appCameToForeground), name: UIApplication.willEnterForegroundNotification, object: nil)
+    }
+    
+    @objc internal func appCameToForeground() {
+        VideoPlayerController.sharedVideoPlayer.resumeCurrentItem()
     }
 }
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
@@ -57,16 +101,39 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             }
         }
     }
+    
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        VideoPlayerController.sharedVideoPlayer.pausePlayeVideosFor(tableView: tableView)
+        handleScrollEnd()
     }
+    
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         if !decelerate {
-            VideoPlayerController.sharedVideoPlayer.pausePlayeVideosFor(tableView: tableView)
+            handleScrollEnd()
         }
+    }
+    
+    func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+        handleScrollEnd()
+    }
+    
+    private func handleScrollEnd() {
+        VideoPlayerController.sharedVideoPlayer.pausePlayeVideosFor(tableView: self.tableView)
     }
 }
 extension ViewController: PresenterProtocol {
     func refresh() {
+    }
+}
+
+extension UIViewController{
+    func showToast(message : String, seconds: Double = 0.1){
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        alert.view.backgroundColor = .black
+        alert.view.alpha = 0.5
+        alert.view.layer.cornerRadius = 15
+        self.present(alert, animated: true)
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + seconds) {
+            alert.dismiss(animated: true)
+        }
     }
 }

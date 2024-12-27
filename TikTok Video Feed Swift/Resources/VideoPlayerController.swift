@@ -71,9 +71,9 @@ func printShort(_ string: String) {
 }
 
 class VideoPlayerController: NSObject {
-    var minimumLayerHeightToPlay: CGFloat = 60
+    var minimumLayerHeightToPlay: CGFloat = 0
     var mute = false
-    var preferredPeakBitRate: Double = 1000000
+    var preferredPeakBitRate: Double = 10_000 // 10 Kbps
     static private var playerViewControllerKVOContext = 0
     static let sharedVideoPlayer = VideoPlayerController()
     // Video url for currently playing video
@@ -85,7 +85,6 @@ class VideoPlayerController: NSObject {
      */
     private var observingURLs = [String: Bool]() // Dictionary<String, Bool>()
     
-    private var videoLayers = VideoLayers()
     // Current AVPlapyerLayer that is playing video
     var currentLayer: AVPlayerLayer?
     @objc var currentPlayer: AVPlayer?
@@ -121,6 +120,39 @@ class VideoPlayerController: NSObject {
         }
         
         notificationCenter.removeObserver(self)
+    }
+    
+    struct TimeDataModel {
+        let currentTime: Double
+        let durationTime: Double
+        let bufferedTime: Double
+        let videoURL: String?
+    }
+    
+    var timeHandler: ((TimeDataModel) -> Void)?
+    
+    var currentTime: Double {
+        let time = currentPlayer?.currentTime() ?? .zero
+        if CMTIME_IS_VALID(time) && !CMTIME_IS_INDEFINITE(time) {
+            return CMTimeGetSeconds(time)
+        } else {
+            return 0.0
+        }
+    }
+    
+    var durationTime: Double {
+        guard let currentItem = currentPlayer?.currentItem else { return 0.0 }
+        
+        let duration = currentItem.duration
+        if CMTIME_IS_VALID(duration) && !CMTIME_IS_INDEFINITE(duration) {
+            return CMTimeGetSeconds(duration)
+        } else {
+            return 0.0
+        }
+    }
+    
+    func isValidTime(value: Double) -> Bool{
+        return !value.isNaN && value != 0.0 && !value.isInfinite
     }
     
     public override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
@@ -186,6 +218,7 @@ class VideoPlayerController: NSObject {
     
     deinit {
         removeObservers()
+        removeTimeObserver()
     }
 
     // Setup video for a URL using HLSVideoCache
@@ -195,59 +228,59 @@ class VideoPlayerController: NSObject {
             printShort("Invalid URL or unable to create reverse proxy URL")
             return
         }
-
-        // Load asset and create AVPlayer
-        let asset = AVURLAsset(url: proxyURL)
-        let requestedKeys = ["playable"]
-
-        asset.loadValuesAsynchronously(forKeys: requestedKeys) { [weak self] in
-            guard let self = self else { return }
-
-            var error: NSError?
-            let status = asset.statusOfValue(forKey: "playable", error: &error)
-            switch status {
-            case .loaded:
-                let player = AVPlayer()
-                let item = AVPlayerItem(asset: asset)
-
-                DispatchQueue.main.async {
-                    // Try to play the video again in case playVideo was already called
-                    if self.videoURL == url, let layer = self.currentLayer {
-                        self.playVideo(withLayer: layer, url: url, player: player, playerItem: item)
-                    }
-                }
-
-            case .failed, .cancelled:
-                printShort("Failed to load asset for URL: \(url)")
-                return
-
-            default:
-                printShort("Unknown asset loading state")
-                return
-            }
+        
+        let player = AVPlayer()
+        let item = AVPlayerItem(url: proxyURL)
+        if self.videoURL == url, let layer = self.currentLayer {
+            self.playVideo(withLayer: layer, url: url, player: player, playerItem: item)
         }
     }
 
     func playVideo(withLayer layer: AVPlayerLayer, url: String, player: AVPlayer, playerItem: AVPlayerItem) {
         videoURL = url
         currentLayer = layer
-        currentPlayer = player
-
+        
+        if let currentPlayer = currentPlayer {
+            currentPlayer.pause()
+            currentPlayer.replaceCurrentItem(with: nil)
+        } else {
+            currentPlayer = player
+        }
+        
         // Assign player and item to the layer
-        layer.player = player
-        player.replaceCurrentItem(with: playerItem)
+        layer.player = currentPlayer == nil ? player : currentPlayer!
+        currentPlayer!.replaceCurrentItem(with: playerItem)
 
         // Play the video
-        player.playImmediately(atRate: 1)
-
-        NotificationCenter.default.post(name: Notification.Name("STARTED_PLAYING"),
-                                        object: nil,
-                                        userInfo: nil)
-        
-        
+        currentPlayer!.playImmediately(atRate: 1)
+        addTimeObserver()
         addObservers()
     }
-
+    
+    private var timeObserverToken: Any?
+    func addTimeObserver() {
+        // Ensure the observer is added only once
+        guard timeObserverToken == nil else { return }
+        
+        let timeInterval = CMTime(seconds: 1, preferredTimescale: CMTimeScale(NSEC_PER_SEC)) // Update every second
+        timeObserverToken = currentPlayer?.addPeriodicTimeObserver(forInterval: timeInterval, queue: .main) { [weak self] time in
+            guard let self = self else { return }
+            let currentTime = self.currentTime
+            let durationTime = self.durationTime
+            let bufferedTime = bufferedTime
+            
+            let timeData = TimeDataModel(currentTime: currentTime, durationTime: durationTime, bufferedTime: bufferedTime, videoURL: videoURL)
+            self.timeHandler?(timeData)
+        }
+    }
+    
+    func removeTimeObserver() {
+        if let token = timeObserverToken {
+            currentPlayer?.removeTimeObserver(token)
+            timeObserverToken = nil
+        }
+    }
+    
     func removeLayerFor(cell: PlayVideoLayerContainer) {
         if let url = cell.videoURL {
             removeFromSuperLayer(layer: cell.videoLayer, url: url)
@@ -259,6 +292,7 @@ class VideoPlayerController: NSObject {
         currentLayer = nil
         layer.player?.pause()
         layer.player = nil
+        removeTimeObserver() // Remove time observer when stopping playback
     }
     
     /*
@@ -300,11 +334,15 @@ class VideoPlayerController: NSObject {
                     printShort("Invalid URL or reverse proxy failed")
                     return
                 }
-
-                let player = AVPlayer()
+                
+                let player = currentPlayer ?? AVPlayer()
                 let item = AVPlayerItem(url: proxyURL)
                 playVideo(withLayer: videoCell.videoLayer, url: videoCellURL, player: player, playerItem: item)
             }
         }
+    }
+    
+    func resumeCurrentItem() {
+        currentPlayer?.play()
     }
 }

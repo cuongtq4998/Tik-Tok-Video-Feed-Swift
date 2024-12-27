@@ -9,10 +9,8 @@ import UIKit
 import AVFoundation
 
 class VideoCustomCell: UITableViewCell {
-    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var thumbnailImageView: UIImageView!
-    @IBOutlet weak var bottomGradientImageView: UIImageView!
     var playerController: VideoPlayerController?
     var videoLayer: AVPlayerLayer = AVPlayerLayer()
     var videoURL: String? {
@@ -24,14 +22,7 @@ class VideoCustomCell: UITableViewCell {
         }
     }
     override func awakeFromNib() {
-        let bottomGradient = Utilities.shared.createGradient(color1: UIColor.black.withAlphaComponent(0.0),
-                                            color2: UIColor.black.withAlphaComponent(0.7),
-                                            frame: bottomGradientImageView.bounds)
-        bottomGradientImageView.contentMode = .scaleAspectFill
-        bottomGradientImageView.image = bottomGradient
-        //self.contentView.backgroundColor = .random
         videoLayer.backgroundColor = UIColor.clear.cgColor
-        videoLayer.videoGravity = AVLayerVideoGravity.resize
         thumbnailImageView.layer.addSublayer(videoLayer)
         selectionStyle = .none
     }
@@ -46,8 +37,6 @@ class VideoCustomCell: UITableViewCell {
     func configureCell(data: VideoObject) {
         self.thumbnailImageView.imageURL = data.thumbnailURL
         self.videoURL = data.videoURL
-        self.titleLabel.text = data.title + "\(videoURL ?? "")"
-        titleLabel.lineBreakMode = .byTruncatingHead
         self.descriptionLabel.text = data.videoDescription
     }
 }
@@ -62,5 +51,19 @@ extension VideoCustomCell: PlayVideoLayerContainer {
               }
         let visibleVideoFrame = videoFrame.intersection(superViewFrame)
         return visibleVideoFrame.size.height
+    }
+}
+
+extension TimeInterval {
+    
+    public func toInt32() -> Int32 {
+        if !self.isNaN && !self.isInfinite {
+            return Int32(self)
+        }
+        return 0
+    }
+    
+    public var timeIntervalString:String {
+      return String(format: "%.2f", self)
     }
 }

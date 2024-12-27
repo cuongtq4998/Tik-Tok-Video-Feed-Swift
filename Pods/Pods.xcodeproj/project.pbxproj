@@ -7,104 +7,104 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02085A4DBE7C18EEE612837B12DFCF5E /* GCDWebServerHTTPStatusCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = B30AFD6DE8786A8CEE4EE3A152FFD9CA /* GCDWebServerHTTPStatusCodes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		09FE847E27B56E8EB38B08092FC6B586 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 6424DB8872DCC27DA8B8E5140792C2C9 /* GCDWebServerStreamedResponse.m */; };
-		0CFF58677C82070B480DBE06B2D64637 /* DataSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A535523E177A6CA4C24AB454DD59AB0 /* DataSerializer.swift */; };
-		0D8636813F45F76286699D0E2FD0429C /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A4A7DB225875422E42A323DF50C07 /* GCDWebServerFileRequest.m */; };
-		0E473D493B9159E34D9DB4AFC4C29914 /* GCDWebServerStreamedResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 947D8BA9944F20A783013C11CD5FAC52 /* GCDWebServerStreamedResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0FDE21112C222690FD50EAFE911A5062 /* StorageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146F890420F5D6907264F85F57323F74 /* StorageError.swift */; };
-		13284ADCA851B3CF531D992CAC5EB69C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA1C1073651CD11E5EAFB9310ADE83E /* MobileCoreServices.framework */; };
-		135B9E424A44225E8B73EFDE4DFE1739 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7DE44579AD43592BADDA55B3039405 /* GCDWebServerErrorResponse.m */; };
-		191E2DE15E6C7B6414C7AA020ED1643E /* MemoryCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250C95E46350BA22DFEC2AB6D323A354 /* MemoryCapsule.swift */; };
-		192838E041AC1E270B4F80CC7EE461C9 /* GCDWebServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 13E693D44E8865969C700BBA7439BE0F /* GCDWebServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		19919FC815BCD25518C388EB1427B6F9 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E6C39E663B07D6D958E41354356189 /* GCDWebServerDataResponse.m */; };
-		1BE3BFD21E1752E7ED98A6B72D4C2315 /* HybridStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0420C1831C0969E4487DA2319CCF49AA /* HybridStorage.swift */; };
-		258C6A83830AC9D9218517AF7D17C624 /* GCDWebServerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = CE407F6634BA0A8B6EC6245BAB2B4DF0 /* GCDWebServerPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		25DD1D0497BFD6C9F139D216107A2CF4 /* Pods-TikTok Video Feed Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C307619171F0FF471E4AA6E7E3A18115 /* Pods-TikTok Video Feed Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		25F820944ED6078DB4D4598FCE816AF3 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC8D338B3CF0C2D530CD90E987B90E /* Entry.swift */; };
-		2734B093AC2333FA76E827DE4EA31C67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD210561E5EB6E0EF29007A69CB494B /* Foundation.framework */; };
-		28733C14B59F0BC154FB3F76C9F637E1 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AB8CFB3712DB6CC9D18F107124F3E8 /* GCDWebServerConnection.m */; };
-		2FFD063F189C85BD15BF2E58C74C1C29 /* GCDWebServerURLEncodedFormRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DB5C71F9930C217B13064B1DA93D4DA /* GCDWebServerURLEncodedFormRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3417D5E922FEA563552314D41BF579CA /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88429BCDC474AA179D1ED0362905207 /* MemoryStorage.swift */; };
-		371B5D055B1927ABC1FE5F2CBD44CD15 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5971196D372274895C7E82213A8B49AB /* GCDWebServerFileResponse.m */; };
-		37B6563E902FB9160B6C27CBC8FD72CE /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA1AA745746AF519C5DE6E813CA75F2 /* GCDWebServerRequest.m */; };
-		3C6F05ED941574B7F775CE040E238B64 /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFF8C21FE86AE4A91BDA4C10B1AA8A6 /* Transformer.swift */; };
-		445F2BD3AEF1B0DF544145C35E5CF38B /* ExpirationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E47F2A19C9D8670BFCBB951123260 /* ExpirationMode.swift */; };
-		47052864A1A923E5374546FAF49AD0F5 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E85C1D541046D1B7235F4A6CA5C915E3 /* GCDWebServerURLEncodedFormRequest.m */; };
-		47249A37530E13DD72C87EA0E51169CC /* FileManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED33F155DF4E6513F10BED995ED4BEB /* FileManager+Extensions.swift */; };
-		48FE7816ACD8C2B2EA9B08E2DFDBFA55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD210561E5EB6E0EF29007A69CB494B /* Foundation.framework */; };
-		4F11F585DC59C8263F95EDEDBB002369 /* GCDWebServerDataResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 98246885C06C3577A545C9521F799FE4 /* GCDWebServerDataResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		576F206C87B4D7EDDE6CC9CFD03664C6 /* Storage+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4D38661A23A1573A5CE6DBCF9C6DC8 /* Storage+Transform.swift */; };
-		5CF7F1CF8CF600BAB0E30ACFFDD2DEA2 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23815DAE9134083C24A16F61F94E306 /* Types.swift */; };
-		5DB0EBEB6CD66B13802558B95559103E /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549FFECB918269F107FF51A777BD3404 /* UIImage+Extensions.swift */; };
-		64B146909976A822ED9A97EF9A8C95DA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6C337B2521A9490D4D3EE3BD254BF6 /* CFNetwork.framework */; };
-		6500D7538A62237D74A2FD32D18557CC /* Cache-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 595D44F7CBDA96FE2B22673C512AE15F /* Cache-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		769632FB827DB154FBF1D7116C16F578 /* Optional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200ED09611865F7B97B14723888EF6F /* Optional+Extension.swift */; };
-		7A101968933DF9CD2704382DDA59FC0B /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F70B61D600AEE75F3266B88E4B1F2E /* GCDWebServer.m */; };
-		7DA71D99B84CC31B34655AB37756F334 /* GCDWebServerConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = EF4B2F05272DDCC5C3F7C875D90C1E80 /* GCDWebServerConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		80ED676617529CD5B35CD4A66A1CCE64 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4DBF2F6878805490668F7023F10A47 /* URL+Extensions.swift */; };
-		8383131832BB3BE0409236B26A47A426 /* GCDWebServerDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 1266FCB74DFC87D9D0C2F3CBA93B5AD6 /* GCDWebServerDataRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		85B473E8EB5074C92CBE92A0B88F1C5C /* GCDWebServerFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A4BB021F05919EE42820A891346E27A /* GCDWebServerFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9122DF53A3DA909AF0AA00354A868E79 /* Cache-Cache_privacy in Resources */ = {isa = PBXBuildFile; fileRef = 942ACD9E3F2667B5A7C1B9CAE681F72A /* Cache-Cache_privacy */; };
-		95DEEF851E39340E9FA158CFABD7C443 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 095A8F3971E634161993C9BF1934A762 /* GCDWebServerFunctions.m */; };
-		9828CB96CEF532348083191A143D0022 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E542FA799475BF918921FDEA42078003 /* GCDWebServerResponse.m */; };
-		A4C6C7B6E36DB5B26D152EC58CCDF579 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 91B6C7C5D3F8BC593829C5F9F5D47571 /* PrivacyInfo.xcprivacy */; };
-		A6D711254A6FB09D769FF0CDFEA90602 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20172BF6C7C76FEE6F2ADCA2558D0982 /* MD5.swift */; };
-		A8255C4A83481F4E35E638A52006FDCB /* TypeWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0866002C12AFF3DA75201C5C818C54 /* TypeWrapper.swift */; };
-		ACC76D6C1EDE3639B7F5EF2E7E837645 /* Pods-TikTok Video Feed Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F3586A4CA6366F6931707D5AC9C585 /* Pods-TikTok Video Feed Swift-dummy.m */; };
-		AD6D314AE3BBF3CD6EED3AC69BC98C1A /* JSONDecoder+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93349C65D129D8B8EA19CCD20CB428B /* JSONDecoder+Extensions.swift */; };
-		B28116631DF8F5381C6668448CA3BD78 /* GCDWebServerResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = BF7F681C3AFF0F0A648BF85C251367D3 /* GCDWebServerResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B8E449A02466E3A5156FCAAB71C5CAC7 /* SyncStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873DFEE4670E295BD9A89B78746B076 /* SyncStorage.swift */; };
-		BDC1514AA2544B17ACC2ADC20572C261 /* TransformerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20B40144BF3F6DF8040A5659505E797 /* TransformerFactory.swift */; };
-		C16BF02F49B634AF25783F339A78C178 /* AsyncStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F368D2F25FC33B6EB0286E807D9222E /* AsyncStorage.swift */; };
-		C2456DED92A437BD36446043347F82FE /* GCDWebServer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AF6D090BE37EFBA212F29D38D5E9F66 /* GCDWebServer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C42FCE48A86E2D456501662784820E4C /* GCDWebServerErrorResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F11706CDCBBF779CD53ACBB5AD0F5B2 /* GCDWebServerErrorResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C44A71B9620F7974BD35FA6845131553 /* KeyObservationRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8EBF476B8464B16C53A599A32F2CB /* KeyObservationRegistry.swift */; };
-		C7866C8C01B672F0FD573F04347F02DB /* GCDWebServerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 80EED0966A708A05D5F3C7AFDE2AF58B /* GCDWebServerRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CA62AD5F3518318B9DCF26A8113BEACE /* GCDWebServerFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 21729DCC74CE55D6EC45BB2563E98C40 /* GCDWebServerFileResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CAE997EA797010B106BF3F32C4F0D5E2 /* GCDWebServerFileRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 28DE16F8CDD740DDE81181A0C88C490D /* GCDWebServerFileRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CF2859AC5C03A8B98420F0D41CDBD45D /* Expiry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FEF647B75EA62C8088DF408BB4C671 /* Expiry.swift */; };
-		D004469F501F225381F1161EBB162239 /* ImageWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD623C3198EDDAA3855AC41261FAD7FD /* ImageWrapper.swift */; };
-		D015DD7567C65B0421DC536ED33A2775 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7A6887BD534F3E1452EFDC101B9368 /* GCDWebServerMultiPartFormRequest.m */; };
-		D1B9604784D6E8E691F09363A5155357 /* StorageAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD457188D9B221FCE981E934FCCC86DB /* StorageAware.swift */; };
-		D397999901996C42B9768CBADE5B55E5 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E791BBEAB42C018AB8D1F6AFF2DE64E5 /* GCDWebServerDataRequest.m */; };
-		D8142DC2A1ECBD89F704BE11944532B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD210561E5EB6E0EF29007A69CB494B /* Foundation.framework */; };
-		DAD640392DF746302196B0FBA0643028 /* JSONDictionaryWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E70DC8139FF9519ADA3F69454B7A5A /* JSONDictionaryWrapper.swift */; };
-		DF5F9701CDCD4A324FF9D942B5BB2E14 /* GCDWebServer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EEE49260BEB7B399C43B9C3455DFA53 /* GCDWebServer-dummy.m */; };
-		E01D73E58BB51127FA7B53667EDC47BD /* Cache-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F99A56D7AB6235CBB8C67ACD58608C4C /* Cache-dummy.m */; };
-		E4FD95E0F75293594D9B2DCB3A9A6DF8 /* StorageObservationRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A112CDB23F68C076727567FB5CFE1DD /* StorageObservationRegistry.swift */; };
-		E8FB7909CC942F16F49E016D5ACD04E3 /* ObservationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9435AFD92241490B8C8C032C11EB2D74 /* ObservationToken.swift */; };
-		EBB62F6A020B11ECFA2D026AD8409C22 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B9A7AE9B15EC92D3FFEFDBCB038661 /* Storage.swift */; };
-		F2864083E34D956C77E534300F92195C /* MemoryConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F29BFF5FDDDCA4586DA738BA1DA954 /* MemoryConfig.swift */; };
-		F509BEDB70EEB65292FC3D95136C3997 /* JSONArrayWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA48672F04F252727919CD612851DA /* JSONArrayWrapper.swift */; };
-		F52C3D9FA66193D7E4F28A3902B8B082 /* DiskStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6AED901F6ED968C5CCBCD8622428E1 /* DiskStorage.swift */; };
-		F92FC975B98A38539606945060EF60BD /* DiskConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB87C3C55369BC5CA82F4AE00FD4C8E /* DiskConfig.swift */; };
-		FD6C14B1E4D3D79861EE5542705DC549 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FDF681FD4DAFD891D5143EA43F750A /* Date+Extensions.swift */; };
-		FED1212B0189F007EE8346E201B55FFD /* Hasher+constantAccrossExecutions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A8757175C3B663D846A73D32936DDF /* Hasher+constantAccrossExecutions.swift */; };
-		FF7EB0C43A239B674F582BD61CBA2B0F /* GCDWebServerMultiPartFormRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 71A3D8BC6B58FF442E78FFE83D5DF08E /* GCDWebServerMultiPartFormRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05A8110E2B254083460DD5C669C454DA /* GCDWebServerErrorResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F11706CDCBBF779CD53ACBB5AD0F5B2 /* GCDWebServerErrorResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0850B643685B716A843209B63F6CA753 /* GCDWebServerFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A4BB021F05919EE42820A891346E27A /* GCDWebServerFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		091DD7EC8A28B7BF8A99762756D4AB3F /* JSONDictionaryWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E70DC8139FF9519ADA3F69454B7A5A /* JSONDictionaryWrapper.swift */; };
+		0A193C823BB6292C31AB7C230104FCD4 /* GCDWebServerDataResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 98246885C06C3577A545C9521F799FE4 /* GCDWebServerDataResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		115339A38D460F8F577EF07ADEA1A318 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA1AA745746AF519C5DE6E813CA75F2 /* GCDWebServerRequest.m */; };
+		165A1D5082B456C875A30283954C6F5E /* JSONArrayWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA48672F04F252727919CD612851DA /* JSONArrayWrapper.swift */; };
+		17639DF03C06D48BEB9B756054856994 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 91B6C7C5D3F8BC593829C5F9F5D47571 /* PrivacyInfo.xcprivacy */; };
+		1A2B557B3DA3EEF66C5E1573000337D7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC45E7524341B651F7B00597C13164BD /* CFNetwork.framework */; };
+		218C7C6F7252A8DB3EE559631398BDCC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE600BF3A9006548A678BA55CD2B374D /* Foundation.framework */; };
+		2891C3026DA4526899E0E7ACAED25500 /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88429BCDC474AA179D1ED0362905207 /* MemoryStorage.swift */; };
+		29A5B34BEA9DBDAE4750CB47F792603B /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5971196D372274895C7E82213A8B49AB /* GCDWebServerFileResponse.m */; };
+		2B0AFBD02805BACA64D201DFC9223945 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FDF681FD4DAFD891D5143EA43F750A /* Date+Extensions.swift */; };
+		2BA471CB564726FD0EB9EAB9B6F7C8D9 /* AsyncStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F368D2F25FC33B6EB0286E807D9222E /* AsyncStorage.swift */; };
+		30B3EF9513CAABF89A6551C0B539C0C9 /* GCDWebServer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EEE49260BEB7B399C43B9C3455DFA53 /* GCDWebServer-dummy.m */; };
+		322EA5C0A11B1AA2AD84E0ECA23287A6 /* GCDWebServerDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 1266FCB74DFC87D9D0C2F3CBA93B5AD6 /* GCDWebServerDataRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38138AFEA61EB43360153E164720CE02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE600BF3A9006548A678BA55CD2B374D /* Foundation.framework */; };
+		39FF101C59062CF277500B39A51586FD /* GCDWebServerResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = BF7F681C3AFF0F0A648BF85C251367D3 /* GCDWebServerResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AB1D4CD1F02C6E0A06A4437E6142BA9 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AB8CFB3712DB6CC9D18F107124F3E8 /* GCDWebServerConnection.m */; };
+		3B47C6B0D8E1050F4957B4DB2AB5999F /* SyncStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873DFEE4670E295BD9A89B78746B076 /* SyncStorage.swift */; };
+		3BB2944A99FD9694ADB57A0808869ACA /* KeyObservationRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8EBF476B8464B16C53A599A32F2CB /* KeyObservationRegistry.swift */; };
+		3F392CA18FC6624A4B0F41B8EADAC560 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A4A7DB225875422E42A323DF50C07 /* GCDWebServerFileRequest.m */; };
+		3F6B562AAE2AABA2B0016B3C557B3BC4 /* GCDWebServerHTTPStatusCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = B30AFD6DE8786A8CEE4EE3A152FFD9CA /* GCDWebServerHTTPStatusCodes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44D99151395CE7B01B474496E8B1F5DA /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFF8C21FE86AE4A91BDA4C10B1AA8A6 /* Transformer.swift */; };
+		45F12828A661922A3344EA5248FB1534 /* GCDWebServerFileRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 28DE16F8CDD740DDE81181A0C88C490D /* GCDWebServerFileRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EE6E696359FD8759720795A5C35ACB6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 787F3D0773D066BC625A0E914BFC0556 /* MobileCoreServices.framework */; };
+		57ED133871F2B7997D67EA2963DBFD2A /* Pods-TikTok Video Feed Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F3586A4CA6366F6931707D5AC9C585 /* Pods-TikTok Video Feed Swift-dummy.m */; };
+		5A65BE33B647E88A26C0BC76734FA149 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4DBF2F6878805490668F7023F10A47 /* URL+Extensions.swift */; };
+		5C7CD2D53150DE713900F9DDE53803DF /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E542FA799475BF918921FDEA42078003 /* GCDWebServerResponse.m */; };
+		616CCD647688499A1E16EF3375CF93B6 /* Cache-Cache_privacy in Resources */ = {isa = PBXBuildFile; fileRef = 942ACD9E3F2667B5A7C1B9CAE681F72A /* Cache-Cache_privacy */; };
+		66A38D34C5AFBE7493C8BC95031A1FED /* GCDWebServerURLEncodedFormRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DB5C71F9930C217B13064B1DA93D4DA /* GCDWebServerURLEncodedFormRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B1A6A258AE1CAA7A212B9BFFA6D9945 /* TypeWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0866002C12AFF3DA75201C5C818C54 /* TypeWrapper.swift */; };
+		6B1B850BE7344F0039EA63C817D2E1FB /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23815DAE9134083C24A16F61F94E306 /* Types.swift */; };
+		6C25BBD2DC3F9DE8C6A0602FD605F198 /* StorageObservationRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A112CDB23F68C076727567FB5CFE1DD /* StorageObservationRegistry.swift */; };
+		6F6B10A85B5214F5CD0CD90352277B70 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E6C39E663B07D6D958E41354356189 /* GCDWebServerDataResponse.m */; };
+		7830C4D854FFAAA6099F981CAD4C581D /* GCDWebServerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = CE407F6634BA0A8B6EC6245BAB2B4DF0 /* GCDWebServerPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7ABF20A2976AE0EBFD986F6C8D8AA1A0 /* Storage+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4D38661A23A1573A5CE6DBCF9C6DC8 /* Storage+Transform.swift */; };
+		7E991AB2EC94565819F8FA947D0D9F40 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7DE44579AD43592BADDA55B3039405 /* GCDWebServerErrorResponse.m */; };
+		825B3A4588F81EE552813BF1888187D1 /* GCDWebServerFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 21729DCC74CE55D6EC45BB2563E98C40 /* GCDWebServerFileResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8737398020A55723694D0894EF85EC03 /* DiskConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB87C3C55369BC5CA82F4AE00FD4C8E /* DiskConfig.swift */; };
+		8D11370F629DB9F61E0D2F6710B6E70E /* ObservationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9435AFD92241490B8C8C032C11EB2D74 /* ObservationToken.swift */; };
+		8D313FE57B739C6F481FC33D3D14ABAE /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549FFECB918269F107FF51A777BD3404 /* UIImage+Extensions.swift */; };
+		8E697FA9B626C44CEB3FC135A9BDD7F9 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B9A7AE9B15EC92D3FFEFDBCB038661 /* Storage.swift */; };
+		8F71123AA982AE45D7B0F353629DB328 /* DiskStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6AED901F6ED968C5CCBCD8622428E1 /* DiskStorage.swift */; };
+		969C30EC571BC095E3668F531ACC7270 /* FileManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED33F155DF4E6513F10BED995ED4BEB /* FileManager+Extensions.swift */; };
+		96EE9CB2007DA2C0B922E55BF12DF494 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E791BBEAB42C018AB8D1F6AFF2DE64E5 /* GCDWebServerDataRequest.m */; };
+		9DCFCEC4A66DB616CA3C46C0942890FD /* JSONDecoder+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93349C65D129D8B8EA19CCD20CB428B /* JSONDecoder+Extensions.swift */; };
+		A2741B5FBC4427CCB8ED4C36046A90C1 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E85C1D541046D1B7235F4A6CA5C915E3 /* GCDWebServerURLEncodedFormRequest.m */; };
+		A46B4250DBAE3FEC36B8540788AE1615 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7A6887BD534F3E1452EFDC101B9368 /* GCDWebServerMultiPartFormRequest.m */; };
+		A7FBEB6F277894E681BE6F00C20BCF34 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20172BF6C7C76FEE6F2ADCA2558D0982 /* MD5.swift */; };
+		B104921DE7EA86944961B89573DC8AF0 /* HybridStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0420C1831C0969E4487DA2319CCF49AA /* HybridStorage.swift */; };
+		B448E6D466C08BB5600FB0BE780D95B9 /* MemoryCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250C95E46350BA22DFEC2AB6D323A354 /* MemoryCapsule.swift */; };
+		BF7F3816621F57D3C5DDBC4953A42319 /* Optional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200ED09611865F7B97B14723888EF6F /* Optional+Extension.swift */; };
+		C56FA3D979F5796FB89361CA05A8A64C /* GCDWebServerConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = EF4B2F05272DDCC5C3F7C875D90C1E80 /* GCDWebServerConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7EC783EBA035B4FAF67AE4397A9D21B /* GCDWebServerMultiPartFormRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 71A3D8BC6B58FF442E78FFE83D5DF08E /* GCDWebServerMultiPartFormRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB944727EC7CEC5FA41F001DA9E43183 /* GCDWebServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 13E693D44E8865969C700BBA7439BE0F /* GCDWebServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCDFCF2082C37DDFCEC6805394C8A63A /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F70B61D600AEE75F3266B88E4B1F2E /* GCDWebServer.m */; };
+		D0CB3C2A508B2E628C68FFC37428D226 /* DataSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A535523E177A6CA4C24AB454DD59AB0 /* DataSerializer.swift */; };
+		D571B18162BDFA1DA9C48B77E257BB99 /* MemoryConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F29BFF5FDDDCA4586DA738BA1DA954 /* MemoryConfig.swift */; };
+		DA299A05EF79D3A08D9FD9A0AC078109 /* Cache-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F99A56D7AB6235CBB8C67ACD58608C4C /* Cache-dummy.m */; };
+		DBEE24B84A4A162679A74D2126DADA57 /* ImageWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD623C3198EDDAA3855AC41261FAD7FD /* ImageWrapper.swift */; };
+		E441F73F469E950DAD256C0DA0F1E74A /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 6424DB8872DCC27DA8B8E5140792C2C9 /* GCDWebServerStreamedResponse.m */; };
+		E44B44702E04A3D794A247B34ABCAEF6 /* GCDWebServerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 80EED0966A708A05D5F3C7AFDE2AF58B /* GCDWebServerRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E94255F44CC7EE25B4469A937A26B139 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE600BF3A9006548A678BA55CD2B374D /* Foundation.framework */; };
+		E9436041EE94611A0E599E9BF4A59666 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC8D338B3CF0C2D530CD90E987B90E /* Entry.swift */; };
+		E9A5A50C94BABDFCEED6A0DF8F05EE74 /* Pods-TikTok Video Feed Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C307619171F0FF471E4AA6E7E3A18115 /* Pods-TikTok Video Feed Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE77DFC00ECACC95E44D062E0624CCF /* Hasher+constantAccrossExecutions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A8757175C3B663D846A73D32936DDF /* Hasher+constantAccrossExecutions.swift */; };
+		EEFB02402427199442807F5B610B74BC /* TransformerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20B40144BF3F6DF8040A5659505E797 /* TransformerFactory.swift */; };
+		F14822DE4849F20DDA85301E41330F9D /* StorageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146F890420F5D6907264F85F57323F74 /* StorageError.swift */; };
+		F23F2D5633AF689C3DC5428E6BA09BC7 /* Cache-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 595D44F7CBDA96FE2B22673C512AE15F /* Cache-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7955094C96EFA5DD160974847CA25B5 /* Expiry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FEF647B75EA62C8088DF408BB4C671 /* Expiry.swift */; };
+		F99826380F3D42083E73613199C59079 /* ExpirationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E47F2A19C9D8670BFCBB951123260 /* ExpirationMode.swift */; };
+		F9A41BE41CCD74A67FB646EA1B297D9D /* StorageAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD457188D9B221FCE981E934FCCC86DB /* StorageAware.swift */; };
+		F9D9ABBA9599D2ACD016A507D4B485F9 /* GCDWebServer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AF6D090BE37EFBA212F29D38D5E9F66 /* GCDWebServer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAD12E7AA8CADC95A0AA702CFEC81904 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 095A8F3971E634161993C9BF1934A762 /* GCDWebServerFunctions.m */; };
+		FCDABF3EC68E50BD96CA294987AF7931 /* GCDWebServerStreamedResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 947D8BA9944F20A783013C11CD5FAC52 /* GCDWebServerStreamedResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3C4818B31F0631C430A6A2D0390DD3AE /* PBXContainerItemProxy */ = {
+		2A8B02B7E4C65BC43C6BE5DCA370D404 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD904F32069787EFB2DFFE05EB82F5BD;
+			remoteInfo = GCDWebServer;
+		};
+		BFB4AE75053FD5DA06E3CEB45E90FEC6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9513DC9A6C5DA07EDB2094920BC9EE79;
 			remoteInfo = Cache;
 		};
-		5C89EF1CEBE733A2C6550AD85834F7A1 /* PBXContainerItemProxy */ = {
+		E8C086F130D1819555DC2BE6B49B7D84 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A79E6593A29F822799E3467F2F10148E;
 			remoteInfo = "Cache-Cache_privacy";
-		};
-		EA763B5E21C86E731E98EC5508125344 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AD904F32069787EFB2DFFE05EB82F5BD;
-			remoteInfo = GCDWebServer;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -153,11 +153,10 @@
 		595D44F7CBDA96FE2B22673C512AE15F /* Cache-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cache-umbrella.h"; sourceTree = "<group>"; };
 		5971196D372274895C7E82213A8B49AB /* GCDWebServerFileResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerFileResponse.m; path = GCDWebServer/Responses/GCDWebServerFileResponse.m; sourceTree = "<group>"; };
 		6424DB8872DCC27DA8B8E5140792C2C9 /* GCDWebServerStreamedResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerStreamedResponse.m; path = GCDWebServer/Responses/GCDWebServerStreamedResponse.m; sourceTree = "<group>"; };
-		6B6C337B2521A9490D4D3EE3BD254BF6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		6D5ECEF2CEF1D668C10B69649FA6D211 /* Pods-TikTok Video Feed Swift-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TikTok Video Feed Swift-frameworks.sh"; sourceTree = "<group>"; };
 		71A3D8BC6B58FF442E78FFE83D5DF08E /* GCDWebServerMultiPartFormRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerMultiPartFormRequest.h; path = GCDWebServer/Requests/GCDWebServerMultiPartFormRequest.h; sourceTree = "<group>"; };
 		736B64357A6C420C3A7062C6D479AC7F /* Cache */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Cache; path = Cache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7AD210561E5EB6E0EF29007A69CB494B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		787F3D0773D066BC625A0E914BFC0556 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		7DB87C3C55369BC5CA82F4AE00FD4C8E /* DiskConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiskConfig.swift; path = Source/Shared/Configuration/DiskConfig.swift; sourceTree = "<group>"; };
 		80EED0966A708A05D5F3C7AFDE2AF58B /* GCDWebServerRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerRequest.h; path = GCDWebServer/Core/GCDWebServerRequest.h; sourceTree = "<group>"; };
 		86CC8D338B3CF0C2D530CD90E987B90E /* Entry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Entry.swift; path = Source/Shared/Library/Entry.swift; sourceTree = "<group>"; };
@@ -175,17 +174,18 @@
 		A200ED09611865F7B97B14723888EF6F /* Optional+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Optional+Extension.swift"; path = "Source/Shared/Library/Optional+Extension.swift"; sourceTree = "<group>"; };
 		A37E47F2A19C9D8670BFCBB951123260 /* ExpirationMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpirationMode.swift; path = Source/Shared/Library/ExpirationMode.swift; sourceTree = "<group>"; };
 		A88429BCDC474AA179D1ED0362905207 /* MemoryStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MemoryStorage.swift; path = Source/Shared/Storage/MemoryStorage.swift; sourceTree = "<group>"; };
+		AC45E7524341B651F7B00597C13164BD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		B30AFD6DE8786A8CEE4EE3A152FFD9CA /* GCDWebServerHTTPStatusCodes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerHTTPStatusCodes.h; path = GCDWebServer/Core/GCDWebServerHTTPStatusCodes.h; sourceTree = "<group>"; };
 		B4FEF647B75EA62C8088DF408BB4C671 /* Expiry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expiry.swift; path = Source/Shared/Library/Expiry.swift; sourceTree = "<group>"; };
 		B68C1052A3B51DBCF7D960F898AAFA95 /* GCDWebServer */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GCDWebServer; path = GCDWebServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD623C3198EDDAA3855AC41261FAD7FD /* ImageWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageWrapper.swift; path = Source/Shared/Library/ImageWrapper.swift; sourceTree = "<group>"; };
 		BE0866002C12AFF3DA75201C5C818C54 /* TypeWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TypeWrapper.swift; path = Source/Shared/Library/TypeWrapper.swift; sourceTree = "<group>"; };
+		BE600BF3A9006548A678BA55CD2B374D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		BF7F681C3AFF0F0A648BF85C251367D3 /* GCDWebServerResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerResponse.h; path = GCDWebServer/Core/GCDWebServerResponse.h; sourceTree = "<group>"; };
 		C307619171F0FF471E4AA6E7E3A18115 /* Pods-TikTok Video Feed Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TikTok Video Feed Swift-umbrella.h"; sourceTree = "<group>"; };
 		C3CBB26A5F741E8BDD7479D44CAC1B87 /* Pods-TikTok Video Feed Swift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TikTok Video Feed Swift"; path = Pods_TikTok_Video_Feed_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDFF8C21FE86AE4A91BDA4C10B1AA8A6 /* Transformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transformer.swift; path = Source/Shared/Library/Transformer.swift; sourceTree = "<group>"; };
 		CE407F6634BA0A8B6EC6245BAB2B4DF0 /* GCDWebServerPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerPrivate.h; path = GCDWebServer/Core/GCDWebServerPrivate.h; sourceTree = "<group>"; };
-		CEA1C1073651CD11E5EAFB9310ADE83E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		D20B40144BF3F6DF8040A5659505E797 /* TransformerFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformerFactory.swift; path = Source/Shared/Library/TransformerFactory.swift; sourceTree = "<group>"; };
 		D3E0BEE3089CF9A20C7CE707829D22EC /* GCDWebServer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GCDWebServer-Info.plist"; sourceTree = "<group>"; };
 		D3F70B61D600AEE75F3266B88E4B1F2E /* GCDWebServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServer.m; path = GCDWebServer/Core/GCDWebServer.m; sourceTree = "<group>"; };
@@ -207,36 +207,36 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2014E5771CFD60FF7B9B5BA9A13D349A /* Frameworks */ = {
+		6E8AC4DF77584FF97A8FAA32E8A0E302 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5FE4020882DD65386687C128316AC581 /* Frameworks */ = {
+		BECDA29824370AEB6358D20F08AB876A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48FE7816ACD8C2B2EA9B08E2DFDBFA55 /* Foundation.framework in Frameworks */,
+				218C7C6F7252A8DB3EE559631398BDCC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A6F7C59A06ECF01C8BF1A37F5EA7D258 /* Frameworks */ = {
+		D192EE64455F09BFEE03A63920A874E2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64B146909976A822ED9A97EF9A8C95DA /* CFNetwork.framework in Frameworks */,
-				D8142DC2A1ECBD89F704BE11944532B4 /* Foundation.framework in Frameworks */,
-				13284ADCA851B3CF531D992CAC5EB69C /* MobileCoreServices.framework in Frameworks */,
+				1A2B557B3DA3EEF66C5E1573000337D7 /* CFNetwork.framework in Frameworks */,
+				38138AFEA61EB43360153E164720CE02 /* Foundation.framework in Frameworks */,
+				4EE6E696359FD8759720795A5C35ACB6 /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE6CE3F9CE4F32549F019CC76FDD5913 /* Frameworks */ = {
+		E3C348F4635D508FEE58FF454E09F5E3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2734B093AC2333FA76E827DE4EA31C67 /* Foundation.framework in Frameworks */,
+				E94255F44CC7EE25B4469A937A26B139 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,19 +261,9 @@
 		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				180F6D477E0A5C8DE9E6C44AF948E735 /* iOS */,
+				480422F6FA3B5288CD1DC4AECA35070D /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		180F6D477E0A5C8DE9E6C44AF948E735 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6B6C337B2521A9490D4D3EE3BD254BF6 /* CFNetwork.framework */,
-				7AD210561E5EB6E0EF29007A69CB494B /* Foundation.framework */,
-				CEA1C1073651CD11E5EAFB9310ADE83E /* MobileCoreServices.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		265A8ADB8299FF8B132A8F2481C04727 /* Targets Support Files */ = {
@@ -335,6 +325,16 @@
 				E0E36B4DFAE2A21D2D8439F67186C3FC /* GCDWebServer */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		480422F6FA3B5288CD1DC4AECA35070D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AC45E7524341B651F7B00597C13164BD /* CFNetwork.framework */,
+				BE600BF3A9006548A678BA55CD2B374D /* Foundation.framework */,
+				787F3D0773D066BC625A0E914BFC0556 /* MobileCoreServices.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		A2067B1F440ECC92655AE51C4BA28E1E /* Pods-TikTok Video Feed Swift */ = {
@@ -448,42 +448,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		517E829FE318C5B78CBE3F309B4FAC48 /* Headers */ = {
+		0EE406258805583F70BE14F879B89D85 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25DD1D0497BFD6C9F139D216107A2CF4 /* Pods-TikTok Video Feed Swift-umbrella.h in Headers */,
+				E9A5A50C94BABDFCEED6A0DF8F05EE74 /* Pods-TikTok Video Feed Swift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC529973C52C216FAD8832BEB845E485 /* Headers */ = {
+		BCD3FE9D0E88757DC3B754BE9B185165 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				192838E041AC1E270B4F80CC7EE461C9 /* GCDWebServer.h in Headers */,
-				C2456DED92A437BD36446043347F82FE /* GCDWebServer-umbrella.h in Headers */,
-				7DA71D99B84CC31B34655AB37756F334 /* GCDWebServerConnection.h in Headers */,
-				8383131832BB3BE0409236B26A47A426 /* GCDWebServerDataRequest.h in Headers */,
-				4F11F585DC59C8263F95EDEDBB002369 /* GCDWebServerDataResponse.h in Headers */,
-				C42FCE48A86E2D456501662784820E4C /* GCDWebServerErrorResponse.h in Headers */,
-				CAE997EA797010B106BF3F32C4F0D5E2 /* GCDWebServerFileRequest.h in Headers */,
-				CA62AD5F3518318B9DCF26A8113BEACE /* GCDWebServerFileResponse.h in Headers */,
-				85B473E8EB5074C92CBE92A0B88F1C5C /* GCDWebServerFunctions.h in Headers */,
-				02085A4DBE7C18EEE612837B12DFCF5E /* GCDWebServerHTTPStatusCodes.h in Headers */,
-				FF7EB0C43A239B674F582BD61CBA2B0F /* GCDWebServerMultiPartFormRequest.h in Headers */,
-				258C6A83830AC9D9218517AF7D17C624 /* GCDWebServerPrivate.h in Headers */,
-				C7866C8C01B672F0FD573F04347F02DB /* GCDWebServerRequest.h in Headers */,
-				B28116631DF8F5381C6668448CA3BD78 /* GCDWebServerResponse.h in Headers */,
-				0E473D493B9159E34D9DB4AFC4C29914 /* GCDWebServerStreamedResponse.h in Headers */,
-				2FFD063F189C85BD15BF2E58C74C1C29 /* GCDWebServerURLEncodedFormRequest.h in Headers */,
+				F23F2D5633AF689C3DC5428E6BA09BC7 /* Cache-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD32CA3BCBFEB6A99EC983E48854FB58 /* Headers */ = {
+		F6F2D66EDC63A29936B3C57688BD1288 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6500D7538A62237D74A2FD32D18557CC /* Cache-umbrella.h in Headers */,
+				CB944727EC7CEC5FA41F001DA9E43183 /* GCDWebServer.h in Headers */,
+				F9D9ABBA9599D2ACD016A507D4B485F9 /* GCDWebServer-umbrella.h in Headers */,
+				C56FA3D979F5796FB89361CA05A8A64C /* GCDWebServerConnection.h in Headers */,
+				322EA5C0A11B1AA2AD84E0ECA23287A6 /* GCDWebServerDataRequest.h in Headers */,
+				0A193C823BB6292C31AB7C230104FCD4 /* GCDWebServerDataResponse.h in Headers */,
+				05A8110E2B254083460DD5C669C454DA /* GCDWebServerErrorResponse.h in Headers */,
+				45F12828A661922A3344EA5248FB1534 /* GCDWebServerFileRequest.h in Headers */,
+				825B3A4588F81EE552813BF1888187D1 /* GCDWebServerFileResponse.h in Headers */,
+				0850B643685B716A843209B63F6CA753 /* GCDWebServerFunctions.h in Headers */,
+				3F6B562AAE2AABA2B0016B3C557B3BC4 /* GCDWebServerHTTPStatusCodes.h in Headers */,
+				C7EC783EBA035B4FAF67AE4397A9D21B /* GCDWebServerMultiPartFormRequest.h in Headers */,
+				7830C4D854FFAAA6099F981CAD4C581D /* GCDWebServerPrivate.h in Headers */,
+				E44B44702E04A3D794A247B34ABCAEF6 /* GCDWebServerRequest.h in Headers */,
+				39FF101C59062CF277500B39A51586FD /* GCDWebServerResponse.h in Headers */,
+				FCDABF3EC68E50BD96CA294987AF7931 /* GCDWebServerStreamedResponse.h in Headers */,
+				66A38D34C5AFBE7493C8BC95031A1FED /* GCDWebServerURLEncodedFormRequest.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,18 +492,18 @@
 /* Begin PBXNativeTarget section */
 		48FB2D22FA9361F688B04EBA2EDF1538 /* Pods-TikTok Video Feed Swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A73B49973BA5338D28F8E3E9E38FEE77 /* Build configuration list for PBXNativeTarget "Pods-TikTok Video Feed Swift" */;
+			buildConfigurationList = 0512BFFF854533B288DDFAFF740F1C4D /* Build configuration list for PBXNativeTarget "Pods-TikTok Video Feed Swift" */;
 			buildPhases = (
-				517E829FE318C5B78CBE3F309B4FAC48 /* Headers */,
-				E848C9E089A8495EE99FAF0C9771CF1E /* Sources */,
-				BE6CE3F9CE4F32549F019CC76FDD5913 /* Frameworks */,
-				B3E4FC66C774D6F8D31A4FF5B9BD3FC4 /* Resources */,
+				0EE406258805583F70BE14F879B89D85 /* Headers */,
+				5EF3F7949236BDBCECF5CE333E3399FF /* Sources */,
+				E3C348F4635D508FEE58FF454E09F5E3 /* Frameworks */,
+				A9391C489D55F7D521AFE9B5AE88056D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BFDBD0A81B70FEFD5E59EB1214CC0873 /* PBXTargetDependency */,
-				D8470AF10893AF6D579B38C1688B23C2 /* PBXTargetDependency */,
+				EF2048414B999D0755ECEF7806615E4B /* PBXTargetDependency */,
+				6C34DED4144C228EBF379AE5D5E8D6E1 /* PBXTargetDependency */,
 			);
 			name = "Pods-TikTok Video Feed Swift";
 			productName = Pods_TikTok_Video_Feed_Swift;
@@ -512,17 +512,17 @@
 		};
 		9513DC9A6C5DA07EDB2094920BC9EE79 /* Cache */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7930400203D364D1566DD97B9AD048FF /* Build configuration list for PBXNativeTarget "Cache" */;
+			buildConfigurationList = 2BFEF10B69ED4A72244B0014EA58B8CB /* Build configuration list for PBXNativeTarget "Cache" */;
 			buildPhases = (
-				DD32CA3BCBFEB6A99EC983E48854FB58 /* Headers */,
-				AEDD7EDB67634726E5C8AF57136387C1 /* Sources */,
-				5FE4020882DD65386687C128316AC581 /* Frameworks */,
-				B6C9D3DAA0A697DB8F5D84E3D5B966E7 /* Resources */,
+				BCD3FE9D0E88757DC3B754BE9B185165 /* Headers */,
+				F2AD9D6EA8C08FFA93DE9EC0281D9D14 /* Sources */,
+				BECDA29824370AEB6358D20F08AB876A /* Frameworks */,
+				EC1299841FA7866CA4E205E58D1E5279 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4380F917E01ECBF457DBE0FEBD524E76 /* PBXTargetDependency */,
+				DD250EE12FCC4CAF912A44783671AC66 /* PBXTargetDependency */,
 			);
 			name = Cache;
 			productName = Cache;
@@ -531,11 +531,11 @@
 		};
 		A79E6593A29F822799E3467F2F10148E /* Cache-Cache_privacy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B5C393E5D6D2657102FD6BC540306A3B /* Build configuration list for PBXNativeTarget "Cache-Cache_privacy" */;
+			buildConfigurationList = 828762BCC0EBBD67C4B38FA707AD4B44 /* Build configuration list for PBXNativeTarget "Cache-Cache_privacy" */;
 			buildPhases = (
-				A6AA7D9FDC516F1D38FA1064FA4AFA0C /* Sources */,
-				2014E5771CFD60FF7B9B5BA9A13D349A /* Frameworks */,
-				E5B5C6170DDAA6D6C753470DBB628814 /* Resources */,
+				D65273796B2D81F02DCFAD087D298896 /* Sources */,
+				6E8AC4DF77584FF97A8FAA32E8A0E302 /* Frameworks */,
+				F3E63334592776E41317923ED03477C4 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -548,12 +548,12 @@
 		};
 		AD904F32069787EFB2DFFE05EB82F5BD /* GCDWebServer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 617BE26E9AC3BDBDE2416B2BD691CABA /* Build configuration list for PBXNativeTarget "GCDWebServer" */;
+			buildConfigurationList = 0441860C46AD4C97915B9E07FA1B7A4E /* Build configuration list for PBXNativeTarget "GCDWebServer" */;
 			buildPhases = (
-				CC529973C52C216FAD8832BEB845E485 /* Headers */,
-				E25C041218A3D4362EFE642495BE7AB3 /* Sources */,
-				A6F7C59A06ECF01C8BF1A37F5EA7D258 /* Frameworks */,
-				1B3CE4019013BAFF62DD39D4E9647F0A /* Resources */,
+				F6F2D66EDC63A29936B3C57688BD1288 /* Headers */,
+				E02482C5BCC7050A4DC39D14714F2ED5 /* Sources */,
+				D192EE64455F09BFEE03A63920A874E2 /* Frameworks */,
+				EE46B4F358DA69DD6BB89E3F73B2B80E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -570,8 +570,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -583,6 +583,7 @@
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = DE8FD32EC719A85FB6C953B5776FE418 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -596,158 +597,141 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1B3CE4019013BAFF62DD39D4E9647F0A /* Resources */ = {
+		A9391C489D55F7D521AFE9B5AE88056D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B3E4FC66C774D6F8D31A4FF5B9BD3FC4 /* Resources */ = {
+		EC1299841FA7866CA4E205E58D1E5279 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				616CCD647688499A1E16EF3375CF93B6 /* Cache-Cache_privacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE46B4F358DA69DD6BB89E3F73B2B80E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B6C9D3DAA0A697DB8F5D84E3D5B966E7 /* Resources */ = {
+		F3E63334592776E41317923ED03477C4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9122DF53A3DA909AF0AA00354A868E79 /* Cache-Cache_privacy in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E5B5C6170DDAA6D6C753470DBB628814 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A4C6C7B6E36DB5B26D152EC58CCDF579 /* PrivacyInfo.xcprivacy in Resources */,
+				17639DF03C06D48BEB9B756054856994 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A6AA7D9FDC516F1D38FA1064FA4AFA0C /* Sources */ = {
+		5EF3F7949236BDBCECF5CE333E3399FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57ED133871F2B7997D67EA2963DBFD2A /* Pods-TikTok Video Feed Swift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65273796B2D81F02DCFAD087D298896 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AEDD7EDB67634726E5C8AF57136387C1 /* Sources */ = {
+		E02482C5BCC7050A4DC39D14714F2ED5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C16BF02F49B634AF25783F339A78C178 /* AsyncStorage.swift in Sources */,
-				E01D73E58BB51127FA7B53667EDC47BD /* Cache-dummy.m in Sources */,
-				0CFF58677C82070B480DBE06B2D64637 /* DataSerializer.swift in Sources */,
-				FD6C14B1E4D3D79861EE5542705DC549 /* Date+Extensions.swift in Sources */,
-				F92FC975B98A38539606945060EF60BD /* DiskConfig.swift in Sources */,
-				F52C3D9FA66193D7E4F28A3902B8B082 /* DiskStorage.swift in Sources */,
-				25F820944ED6078DB4D4598FCE816AF3 /* Entry.swift in Sources */,
-				445F2BD3AEF1B0DF544145C35E5CF38B /* ExpirationMode.swift in Sources */,
-				CF2859AC5C03A8B98420F0D41CDBD45D /* Expiry.swift in Sources */,
-				47249A37530E13DD72C87EA0E51169CC /* FileManager+Extensions.swift in Sources */,
-				FED1212B0189F007EE8346E201B55FFD /* Hasher+constantAccrossExecutions.swift in Sources */,
-				1BE3BFD21E1752E7ED98A6B72D4C2315 /* HybridStorage.swift in Sources */,
-				D004469F501F225381F1161EBB162239 /* ImageWrapper.swift in Sources */,
-				F509BEDB70EEB65292FC3D95136C3997 /* JSONArrayWrapper.swift in Sources */,
-				AD6D314AE3BBF3CD6EED3AC69BC98C1A /* JSONDecoder+Extensions.swift in Sources */,
-				DAD640392DF746302196B0FBA0643028 /* JSONDictionaryWrapper.swift in Sources */,
-				C44A71B9620F7974BD35FA6845131553 /* KeyObservationRegistry.swift in Sources */,
-				A6D711254A6FB09D769FF0CDFEA90602 /* MD5.swift in Sources */,
-				191E2DE15E6C7B6414C7AA020ED1643E /* MemoryCapsule.swift in Sources */,
-				F2864083E34D956C77E534300F92195C /* MemoryConfig.swift in Sources */,
-				3417D5E922FEA563552314D41BF579CA /* MemoryStorage.swift in Sources */,
-				E8FB7909CC942F16F49E016D5ACD04E3 /* ObservationToken.swift in Sources */,
-				769632FB827DB154FBF1D7116C16F578 /* Optional+Extension.swift in Sources */,
-				EBB62F6A020B11ECFA2D026AD8409C22 /* Storage.swift in Sources */,
-				576F206C87B4D7EDDE6CC9CFD03664C6 /* Storage+Transform.swift in Sources */,
-				D1B9604784D6E8E691F09363A5155357 /* StorageAware.swift in Sources */,
-				0FDE21112C222690FD50EAFE911A5062 /* StorageError.swift in Sources */,
-				E4FD95E0F75293594D9B2DCB3A9A6DF8 /* StorageObservationRegistry.swift in Sources */,
-				B8E449A02466E3A5156FCAAB71C5CAC7 /* SyncStorage.swift in Sources */,
-				3C6F05ED941574B7F775CE040E238B64 /* Transformer.swift in Sources */,
-				BDC1514AA2544B17ACC2ADC20572C261 /* TransformerFactory.swift in Sources */,
-				5CF7F1CF8CF600BAB0E30ACFFDD2DEA2 /* Types.swift in Sources */,
-				A8255C4A83481F4E35E638A52006FDCB /* TypeWrapper.swift in Sources */,
-				5DB0EBEB6CD66B13802558B95559103E /* UIImage+Extensions.swift in Sources */,
-				80ED676617529CD5B35CD4A66A1CCE64 /* URL+Extensions.swift in Sources */,
+				CCDFCF2082C37DDFCEC6805394C8A63A /* GCDWebServer.m in Sources */,
+				30B3EF9513CAABF89A6551C0B539C0C9 /* GCDWebServer-dummy.m in Sources */,
+				3AB1D4CD1F02C6E0A06A4437E6142BA9 /* GCDWebServerConnection.m in Sources */,
+				96EE9CB2007DA2C0B922E55BF12DF494 /* GCDWebServerDataRequest.m in Sources */,
+				6F6B10A85B5214F5CD0CD90352277B70 /* GCDWebServerDataResponse.m in Sources */,
+				7E991AB2EC94565819F8FA947D0D9F40 /* GCDWebServerErrorResponse.m in Sources */,
+				3F392CA18FC6624A4B0F41B8EADAC560 /* GCDWebServerFileRequest.m in Sources */,
+				29A5B34BEA9DBDAE4750CB47F792603B /* GCDWebServerFileResponse.m in Sources */,
+				FAD12E7AA8CADC95A0AA702CFEC81904 /* GCDWebServerFunctions.m in Sources */,
+				A46B4250DBAE3FEC36B8540788AE1615 /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				115339A38D460F8F577EF07ADEA1A318 /* GCDWebServerRequest.m in Sources */,
+				5C7CD2D53150DE713900F9DDE53803DF /* GCDWebServerResponse.m in Sources */,
+				E441F73F469E950DAD256C0DA0F1E74A /* GCDWebServerStreamedResponse.m in Sources */,
+				A2741B5FBC4427CCB8ED4C36046A90C1 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E25C041218A3D4362EFE642495BE7AB3 /* Sources */ = {
+		F2AD9D6EA8C08FFA93DE9EC0281D9D14 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A101968933DF9CD2704382DDA59FC0B /* GCDWebServer.m in Sources */,
-				DF5F9701CDCD4A324FF9D942B5BB2E14 /* GCDWebServer-dummy.m in Sources */,
-				28733C14B59F0BC154FB3F76C9F637E1 /* GCDWebServerConnection.m in Sources */,
-				D397999901996C42B9768CBADE5B55E5 /* GCDWebServerDataRequest.m in Sources */,
-				19919FC815BCD25518C388EB1427B6F9 /* GCDWebServerDataResponse.m in Sources */,
-				135B9E424A44225E8B73EFDE4DFE1739 /* GCDWebServerErrorResponse.m in Sources */,
-				0D8636813F45F76286699D0E2FD0429C /* GCDWebServerFileRequest.m in Sources */,
-				371B5D055B1927ABC1FE5F2CBD44CD15 /* GCDWebServerFileResponse.m in Sources */,
-				95DEEF851E39340E9FA158CFABD7C443 /* GCDWebServerFunctions.m in Sources */,
-				D015DD7567C65B0421DC536ED33A2775 /* GCDWebServerMultiPartFormRequest.m in Sources */,
-				37B6563E902FB9160B6C27CBC8FD72CE /* GCDWebServerRequest.m in Sources */,
-				9828CB96CEF532348083191A143D0022 /* GCDWebServerResponse.m in Sources */,
-				09FE847E27B56E8EB38B08092FC6B586 /* GCDWebServerStreamedResponse.m in Sources */,
-				47052864A1A923E5374546FAF49AD0F5 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E848C9E089A8495EE99FAF0C9771CF1E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ACC76D6C1EDE3639B7F5EF2E7E837645 /* Pods-TikTok Video Feed Swift-dummy.m in Sources */,
+				2BA471CB564726FD0EB9EAB9B6F7C8D9 /* AsyncStorage.swift in Sources */,
+				DA299A05EF79D3A08D9FD9A0AC078109 /* Cache-dummy.m in Sources */,
+				D0CB3C2A508B2E628C68FFC37428D226 /* DataSerializer.swift in Sources */,
+				2B0AFBD02805BACA64D201DFC9223945 /* Date+Extensions.swift in Sources */,
+				8737398020A55723694D0894EF85EC03 /* DiskConfig.swift in Sources */,
+				8F71123AA982AE45D7B0F353629DB328 /* DiskStorage.swift in Sources */,
+				E9436041EE94611A0E599E9BF4A59666 /* Entry.swift in Sources */,
+				F99826380F3D42083E73613199C59079 /* ExpirationMode.swift in Sources */,
+				F7955094C96EFA5DD160974847CA25B5 /* Expiry.swift in Sources */,
+				969C30EC571BC095E3668F531ACC7270 /* FileManager+Extensions.swift in Sources */,
+				EBE77DFC00ECACC95E44D062E0624CCF /* Hasher+constantAccrossExecutions.swift in Sources */,
+				B104921DE7EA86944961B89573DC8AF0 /* HybridStorage.swift in Sources */,
+				DBEE24B84A4A162679A74D2126DADA57 /* ImageWrapper.swift in Sources */,
+				165A1D5082B456C875A30283954C6F5E /* JSONArrayWrapper.swift in Sources */,
+				9DCFCEC4A66DB616CA3C46C0942890FD /* JSONDecoder+Extensions.swift in Sources */,
+				091DD7EC8A28B7BF8A99762756D4AB3F /* JSONDictionaryWrapper.swift in Sources */,
+				3BB2944A99FD9694ADB57A0808869ACA /* KeyObservationRegistry.swift in Sources */,
+				A7FBEB6F277894E681BE6F00C20BCF34 /* MD5.swift in Sources */,
+				B448E6D466C08BB5600FB0BE780D95B9 /* MemoryCapsule.swift in Sources */,
+				D571B18162BDFA1DA9C48B77E257BB99 /* MemoryConfig.swift in Sources */,
+				2891C3026DA4526899E0E7ACAED25500 /* MemoryStorage.swift in Sources */,
+				8D11370F629DB9F61E0D2F6710B6E70E /* ObservationToken.swift in Sources */,
+				BF7F3816621F57D3C5DDBC4953A42319 /* Optional+Extension.swift in Sources */,
+				8E697FA9B626C44CEB3FC135A9BDD7F9 /* Storage.swift in Sources */,
+				7ABF20A2976AE0EBFD986F6C8D8AA1A0 /* Storage+Transform.swift in Sources */,
+				F9A41BE41CCD74A67FB646EA1B297D9D /* StorageAware.swift in Sources */,
+				F14822DE4849F20DDA85301E41330F9D /* StorageError.swift in Sources */,
+				6C25BBD2DC3F9DE8C6A0602FD605F198 /* StorageObservationRegistry.swift in Sources */,
+				3B47C6B0D8E1050F4957B4DB2AB5999F /* SyncStorage.swift in Sources */,
+				44D99151395CE7B01B474496E8B1F5DA /* Transformer.swift in Sources */,
+				EEFB02402427199442807F5B610B74BC /* TransformerFactory.swift in Sources */,
+				6B1B850BE7344F0039EA63C817D2E1FB /* Types.swift in Sources */,
+				6B1A6A258AE1CAA7A212B9BFFA6D9945 /* TypeWrapper.swift in Sources */,
+				8D313FE57B739C6F481FC33D3D14ABAE /* UIImage+Extensions.swift in Sources */,
+				5A65BE33B647E88A26C0BC76734FA149 /* URL+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4380F917E01ECBF457DBE0FEBD524E76 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Cache-Cache_privacy";
-			target = A79E6593A29F822799E3467F2F10148E /* Cache-Cache_privacy */;
-			targetProxy = 5C89EF1CEBE733A2C6550AD85834F7A1 /* PBXContainerItemProxy */;
-		};
-		BFDBD0A81B70FEFD5E59EB1214CC0873 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Cache;
-			target = 9513DC9A6C5DA07EDB2094920BC9EE79 /* Cache */;
-			targetProxy = 3C4818B31F0631C430A6A2D0390DD3AE /* PBXContainerItemProxy */;
-		};
-		D8470AF10893AF6D579B38C1688B23C2 /* PBXTargetDependency */ = {
+		6C34DED4144C228EBF379AE5D5E8D6E1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GCDWebServer;
 			target = AD904F32069787EFB2DFFE05EB82F5BD /* GCDWebServer */;
-			targetProxy = EA763B5E21C86E731E98EC5508125344 /* PBXContainerItemProxy */;
+			targetProxy = 2A8B02B7E4C65BC43C6BE5DCA370D404 /* PBXContainerItemProxy */;
+		};
+		DD250EE12FCC4CAF912A44783671AC66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Cache-Cache_privacy";
+			target = A79E6593A29F822799E3467F2F10148E /* Cache-Cache_privacy */;
+			targetProxy = E8C086F130D1819555DC2BE6B49B7D84 /* PBXContainerItemProxy */;
+		};
+		EF2048414B999D0755ECEF7806615E4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cache;
+			target = 9513DC9A6C5DA07EDB2094920BC9EE79 /* Cache */;
+			targetProxy = BFB4AE75053FD5DA06E3CEB45E90FEC6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		202B780652A44774FBD56FC35B90E777 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAA1C1CEDD02CBAD4A561DE9BDC64FC0 /* Cache.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGNING_ALLOWED = NO;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Cache";
-				IBSC_MODULE = Cache;
-				INFOPLIST_FILE = "Target Support Files/Cache/ResourceBundle-Cache_privacy-Cache-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = Cache_privacy;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -814,37 +798,20 @@
 			};
 			name = Debug;
 		};
-		53BF2C3D8A771DEE4E66ABA6D0452D84 /* Debug */ = {
+		3A2E67A603B466F419553D3064EF950E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 517726F6AED8831A5652FE1D517E8B5B /* GCDWebServer.debug.xcconfig */;
+			baseConfigurationReference = FAA1C1CEDD02CBAD4A561DE9BDC64FC0 /* Cache.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GCDWebServer/GCDWebServer-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GCDWebServer/GCDWebServer-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Cache";
+				IBSC_MODULE = Cache;
+				INFOPLIST_FILE = "Target Support Files/Cache/ResourceBundle-Cache_privacy-Cache-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/GCDWebServer/GCDWebServer.modulemap";
-				PRODUCT_MODULE_NAME = GCDWebServer;
-				PRODUCT_NAME = GCDWebServer;
+				PRODUCT_NAME = Cache_privacy;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
@@ -910,45 +877,9 @@
 			};
 			name = Release;
 		};
-		643075AE56D60D857855772D2D0EC939 /* Release */ = {
+		6DE097C501F168C737577A1665C8E072 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42A6C910C12DF2F8F74BA9468DAC887D /* Cache.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Cache/Cache-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Cache/Cache-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Cache/Cache.modulemap";
-				PRODUCT_MODULE_NAME = Cache;
-				PRODUCT_NAME = Cache;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		678FE733455ED5EEF926EB60F99C2D91 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 118171FEEA3F570A712D3E80631F9A2D /* GCDWebServer.release.xcconfig */;
+			baseConfigurationReference = 517726F6AED8831A5652FE1D517E8B5B /* GCDWebServer.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -958,7 +889,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/GCDWebServer/GCDWebServer-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/GCDWebServer/GCDWebServer-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -973,6 +907,45 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		790E4ADF0EB5905457D15BD2646DC5AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 118171FEEA3F570A712D3E80631F9A2D /* GCDWebServer.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/GCDWebServer/GCDWebServer-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/GCDWebServer/GCDWebServer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GCDWebServer/GCDWebServer.modulemap";
+				PRODUCT_MODULE_NAME = GCDWebServer;
+				PRODUCT_NAME = GCDWebServer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -981,7 +954,7 @@
 			};
 			name = Release;
 		};
-		772F8083AAC1E17E3E535618863D9012 /* Release */ = {
+		7C037C4F5F180ABAB5438A248FE88A42 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4E604DA46FEE9D4F3A6CDDFD22962BAB /* Pods-TikTok Video Feed Swift.release.xcconfig */;
 			buildSettings = {
@@ -995,6 +968,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = "Target Support Files/Pods-TikTok Video Feed Swift/Pods-TikTok Video Feed Swift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -1019,7 +994,7 @@
 			};
 			name = Release;
 		};
-		DB600689FABD71C33984B7571E7D00B2 /* Debug */ = {
+		82562EC16A32E4B5F7AE8203E8B5F844 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 324B99A402AF86BB5166F5325F3F8D62 /* Pods-TikTok Video Feed Swift.debug.xcconfig */;
 			buildSettings = {
@@ -1033,6 +1008,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = "Target Support Files/Pods-TikTok Video Feed Swift/Pods-TikTok Video Feed Swift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -1056,42 +1033,7 @@
 			};
 			name = Debug;
 		};
-		EB9BE5F8A5336936CF66EEE85F6AC960 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAA1C1CEDD02CBAD4A561DE9BDC64FC0 /* Cache.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Cache/Cache-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Cache/Cache-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Cache/Cache.modulemap";
-				PRODUCT_MODULE_NAME = Cache;
-				PRODUCT_NAME = Cache;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F2279576BD4C15D8E009A071EAE8B1D4 /* Release */ = {
+		86CE4DB877F2F5DA381683AF49FBD76F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 42A6C910C12DF2F8F74BA9468DAC887D /* Cache.release.xcconfig */;
 			buildSettings = {
@@ -1108,9 +1050,115 @@
 			};
 			name = Release;
 		};
+		C08B012D07DD4F0A83DA38C64395386D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42A6C910C12DF2F8F74BA9468DAC887D /* Cache.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/Cache/Cache-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/Cache/Cache-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Cache/Cache.modulemap";
+				PRODUCT_MODULE_NAME = Cache;
+				PRODUCT_NAME = Cache;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DEBF3CA19B83485D1E47D4C40482CD13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAA1C1CEDD02CBAD4A561DE9BDC64FC0 /* Cache.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/Cache/Cache-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/Cache/Cache-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Cache/Cache.modulemap";
+				PRODUCT_MODULE_NAME = Cache;
+				PRODUCT_NAME = Cache;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0441860C46AD4C97915B9E07FA1B7A4E /* Build configuration list for PBXNativeTarget "GCDWebServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DE097C501F168C737577A1665C8E072 /* Debug */,
+				790E4ADF0EB5905457D15BD2646DC5AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0512BFFF854533B288DDFAFF740F1C4D /* Build configuration list for PBXNativeTarget "Pods-TikTok Video Feed Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82562EC16A32E4B5F7AE8203E8B5F844 /* Debug */,
+				7C037C4F5F180ABAB5438A248FE88A42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BFEF10B69ED4A72244B0014EA58B8CB /* Build configuration list for PBXNativeTarget "Cache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEBF3CA19B83485D1E47D4C40482CD13 /* Debug */,
+				C08B012D07DD4F0A83DA38C64395386D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1120,38 +1168,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		617BE26E9AC3BDBDE2416B2BD691CABA /* Build configuration list for PBXNativeTarget "GCDWebServer" */ = {
+		828762BCC0EBBD67C4B38FA707AD4B44 /* Build configuration list for PBXNativeTarget "Cache-Cache_privacy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				53BF2C3D8A771DEE4E66ABA6D0452D84 /* Debug */,
-				678FE733455ED5EEF926EB60F99C2D91 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7930400203D364D1566DD97B9AD048FF /* Build configuration list for PBXNativeTarget "Cache" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EB9BE5F8A5336936CF66EEE85F6AC960 /* Debug */,
-				643075AE56D60D857855772D2D0EC939 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A73B49973BA5338D28F8E3E9E38FEE77 /* Build configuration list for PBXNativeTarget "Pods-TikTok Video Feed Swift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DB600689FABD71C33984B7571E7D00B2 /* Debug */,
-				772F8083AAC1E17E3E535618863D9012 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B5C393E5D6D2657102FD6BC540306A3B /* Build configuration list for PBXNativeTarget "Cache-Cache_privacy" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				202B780652A44774FBD56FC35B90E777 /* Debug */,
-				F2279576BD4C15D8E009A071EAE8B1D4 /* Release */,
+				3A2E67A603B466F419553D3064EF950E /* Debug */,
+				86CE4DB877F2F5DA381683AF49FBD76F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
